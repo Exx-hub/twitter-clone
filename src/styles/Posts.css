@@ -1,0 +1,139 @@
+.posts {
+	background-color: white;
+	display: flex;
+	position: relative;
+	border-bottom: 1px solid rgb(224, 224, 224);
+	cursor: pointer;
+}
+.posts__expandIcon {
+	position: absolute;
+	right: 13px;
+	top: 3px;
+	height: 20px;
+	width: 20px;
+}
+
+.posts__expandIcon > .MuiSvgIcon-root {
+	color: rgb(160, 159, 159);
+}
+
+.posts__avatar {
+	padding: 10px;
+}
+.posts__avatar > .MuiAvatar-root {
+	height: 45px;
+	width: 45px;
+}
+.posts__avatar > .MuiAvatar-root:hover {
+	filter: brightness(90%);
+}
+.posts__details {
+	padding: 8px 5px;
+	width: 90%;
+}
+
+.posts__detailsTop {
+	display: flex;
+	align-items: center;
+}
+
+.posts__detailsTop > p {
+	font-size: 15px;
+	color: gray;
+	margin-right: 2px;
+}
+.posts__detailsTop > p > strong {
+	color: black !important;
+}
+
+.posts__detailsMiddle > p {
+	font-size: 15px;
+	max-width: 75%;
+}
+
+.posts__image {
+	margin-top: 10px;
+	object-fit: contain;
+	border-radius: 18px;
+	width: 85%;
+}
+
+.posts__detailsBottom {
+	display: flex;
+	padding: 5px 0;
+}
+
+.posts__icons {
+	display: flex;
+	align-items: center;
+	margin-right: 70px;
+	min-width: 60px;
+}
+.posts__icons > .MuiSvgIcon-root {
+	color: rgb(160, 159, 159);
+	font-size: 18px;
+	padding: 5px;
+}
+.posts__icons > .MuiSvgIcon-root:hover {
+	background-color: #e8f5fe;
+	color: #1da1f2;
+	border-radius: 33px;
+}
+.replies:hover p {
+	color: #1da1f2;
+}
+.replies > .MuiSvgIcon-root:hover {
+	color: #1da1f2;
+	background-color: #e8f5fe;
+}
+
+.retweet:hover p {
+	color: #44b97b;
+}
+.retweet > .MuiSvgIcon-root:hover {
+	color: #44b97b;
+	background-color: #e0faec;
+}
+.like:hover p {
+	color: #d85c83;
+}
+.like > .MuiSvgIcon-root:hover {
+	color: #d85c83;
+	background-color: #fcd8e2;
+}
+.posts__icons > p {
+	color: rgb(160, 159, 159);
+	font-size: 14px;
+}
+
+/* // smallerscreen view  */
+@media screen and (max-width: 500px) {
+	.posts__expandIcon {
+		display: none;
+	}
+	.posts__icons {
+		margin-right: 5px;
+	}
+	.posts__detailsMiddle > p {
+		font-size: 13px;
+		max-width: 93%;
+	}
+	.posts__detailsTime {
+		display: none;
+	}
+	.handle {
+		display: none;
+	}
+	.posts__avatar {
+		padding: 7px;
+	}
+	.posts__avatar > .MuiAvatar-root {
+		height: 40px;
+		width: 40px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.posts__details {
+		max-width: 500px;
+	}
+}

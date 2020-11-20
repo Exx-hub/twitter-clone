@@ -1,0 +1,27 @@
+.trend {
+	border-bottom: 1px solid rgb(228, 227, 227);
+	background-color: #f5f8fa;
+	padding: 5px 13px;
+	cursor: pointer;
+}
+.trend:hover {
+	background-color: #e5ebee;
+}
+
+.trend__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.trend__top > h5 {
+	font-weight: normal;
+	color: #878c91;
+}
+.trend__top > .MuiSvgIcon-root {
+	color: gray;
+}
+.trend > p {
+	font-size: 13px;
+	padding: 5px 0;
+	color: #878c91;
+}

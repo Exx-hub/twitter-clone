@@ -1,0 +1,135 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 5px 5px 5px 40px;
+	margin-left: 25px;
+	justify-content: space-between;
+	flex: 0.22;
+
+	/* another way to make div fixed and middle scrollable  */
+	/* position: sticky;
+	top: 0;
+	height: 98vh; */
+}
+
+.sidebar__icon {
+	color: var(--twitter-color);
+	font-size: xx-large !important;
+	margin-bottom: 17px;
+	cursor: pointer;
+	margin-left: 4px;
+	padding: 6px;
+}
+
+.sidebar__icon:hover {
+	background-color: #e8f5fe;
+	border-radius: 33px;
+}
+.sidebar__topBigButton {
+	text-transform: inherit !important;
+	border-radius: 30px !important;
+	color: white !important;
+	background-color: var(--twitter-color) !important;
+	font-weight: 700 !important;
+	padding: 12px 30px !important;
+	width: 230px !important;
+	font-size: 15px !important;
+	margin-top: 10px !important;
+}
+.sidebar__topBigButton:hover {
+	background-color: #1d91da !important;
+}
+.sidebar__topSmallButton {
+	display: none !important;
+	background-color: var(--twitter-color) !important;
+	border-radius: 30px !important;
+	color: white !important;
+	margin-top: 10px !important;
+	padding: 15px 0px !important;
+	font-size: small !important;
+	cursor: pointer;
+}
+.sidebar__topSmallButton:hover {
+	background-color: #1d91da !important;
+}
+
+.sidebar__bottom {
+	padding: 10px 20px 10px 15px;
+	display: flex;
+	margin-bottom: 18px;
+	align-items: center;
+	border-radius: 36px;
+}
+
+.sidebar__bottom:hover {
+	background-color: #e8f5fe;
+}
+
+.sidebar__bottomRight {
+	margin-left: 12px;
+	min-width: 130px;
+}
+.sidebar__bottomRight > h4 {
+	font-size: 15px;
+}
+.sidebar__bottomRight > p {
+	color: gray;
+	font-size: 15px;
+}
+
+.sidebar__bottom > .MuiSvgIcon-root {
+	margin-left: 30px;
+}
+
+/* // for screens 900px and less  */
+
+@media screen and (max-width: 1100px) {
+	.sidebar__topBigButton {
+		display: none !important;
+	}
+	.sidebar__topSmallButton {
+		display: block !important;
+		padding: 10px !important;
+	}
+
+	.sidebar__topSmallButtonIcon {
+		font-size: medium !important;
+	}
+	.sidebar__bottom > .MuiSvgIcon-root {
+		display: none;
+	}
+	.sidebar__bottomRight {
+		display: none;
+	}
+	.sidebar__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.sidebar {
+		margin-left: 0px;
+		padding: 5px;
+		align-items: center;
+		flex: 0.22;
+	}
+	.sidebar__icon {
+		padding: 0;
+	}
+	.sidebar__bottom {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.sidebar {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.sidebar {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

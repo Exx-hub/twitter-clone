@@ -1,0 +1,34 @@
+.trends {
+	margin-top: 15px;
+}
+.trends__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid rgb(228, 227, 227);
+	background-color: #f5f8fa;
+	border-radius: 13px 13px 0 0;
+}
+.trends__top > h4 {
+	font-weight: 800;
+	font-size: 19px;
+}
+.trends__top > .MuiSvgIcon-root {
+	color: #1da1f2;
+}
+.trends__bottom {
+	background-color: #f5f8fa;
+	border-radius: 0 0 13px 13px;
+	padding: 10px;
+	cursor: pointer;
+}
+.trends__bottom > h4 {
+	color: #1da1f2;
+	font-weight: 400;
+	padding: 0 3px 5px 5px;
+}
+
+.trends__bottom:hover {
+	background-color: #e5ebee;
+}

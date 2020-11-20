@@ -1,0 +1,30 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	border-bottom: 1px solid var(--twitter-background);
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header > h4 {
+	font-weight: 800;
+	font-size: 19px;
+}
+.header > .MuiSvgIcon-root {
+	color: var(--twitter-color);
+	cursor: pointer;
+}
+
+/* // smallerscreen view  */
+@media screen and (max-width: 400px) {
+	.header {
+		max-width: 400px;
+	}
+	.header > .MuiSvgIcon-root {
+		margin-right: 10px;
+	}
+}

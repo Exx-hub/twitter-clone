@@ -1,0 +1,67 @@
+.followCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #f5f8fa;
+	cursor: pointer;
+}
+.followCard:hover {
+	background-color: #e5ebee;
+}
+.followCard > .MuiAvatar-root {
+	margin-left: 10px;
+	height: 45px;
+	width: 45px;
+}
+.followCard > .MuiAvatar-root:hover {
+	filter: brightness(86%);
+}
+
+.followCard__left {
+	display: flex;
+}
+
+.followCard__info {
+	display: flex;
+	flex-direction: column;
+}
+.followCard__username {
+	display: flex;
+	padding: 0 5px;
+	align-items: center;
+}
+.followCard__username > h4 {
+	font-size: 15px;
+}
+.followCard__username > .MuiSvgIcon-root {
+	color: #1da1f2;
+	font-size: medium;
+}
+.followCard__handle {
+	display: flex;
+	align-items: center;
+}
+.followCard__handle > h5 {
+	color: #878c91;
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 3px;
+}
+.followCard__handle > p {
+	color: #878c91;
+	font-size: 14px;
+	font-weight: normal;
+	background-color: #e6ecf0;
+	margin-left: 7px;
+	min-width: 78px;
+}
+
+.followCard > button {
+	text-transform: inherit;
+	border-radius: 30px;
+	border: 1px solid #1da1f2;
+	padding: 2px 12px;
+	color: #1da1f2;
+	font-weight: 700;
+}

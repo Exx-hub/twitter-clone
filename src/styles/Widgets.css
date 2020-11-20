@@ -1,0 +1,22 @@
+.widgets {
+	padding: 7px 30px 7px 35px;
+	margin-right: 38px;
+	flex: 0.29;
+
+	/* another way to make div fixed and middle scrollable  */
+	/* position: sticky;
+	top: 0;
+	height: 98vh; */
+}
+
+@media screen and (max-width: 1200px) {
+	.widgets {
+		padding: 7px;
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.widgets {
+		display: none;
+	}
+}

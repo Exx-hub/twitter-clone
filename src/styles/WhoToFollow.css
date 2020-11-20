@@ -1,0 +1,28 @@
+.whoToFollow__top {
+	padding: 10px;
+	border-bottom: 1px solid rgb(228, 227, 227);
+	background-color: #f5f8fa;
+	border-radius: 13px 13px 0 0;
+	margin-top: 15px;
+}
+
+.whoToFollow__top > h4 {
+	font-weight: 800;
+	font-size: 19px;
+}
+
+.whoToFollow__bottom {
+	background-color: #f5f8fa;
+	border-radius: 0 0 13px 13px;
+	padding: 10px;
+	cursor: pointer;
+}
+.whoToFollow__bottom > h4 {
+	color: #1da1f2;
+	font-weight: 400;
+	padding: 0 3px 5px 5px;
+}
+
+.whoToFollow__bottom:hover {
+	background-color: #e5ebee;
+}
